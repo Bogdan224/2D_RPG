@@ -36,21 +36,24 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckForPlayer();
-
-        if(attackCooldownTimer > 0)
+        if (attackCooldownTimer > 0)
         {
             attackCooldownTimer -= Time.deltaTime;
         }
 
-        if (enemyState == EnemyState.Chasing)
+        if (enemyState != EnemyState.Knockback)
         {
-            Chase();
-        }
-        else if(enemyState == EnemyState.Attacking)
-        {
-            rb.velocity = Vector2.zero;
-        }
+            CheckForPlayer();
+
+            if (enemyState == EnemyState.Chasing)
+            {
+                Chase();
+            }
+            else if (enemyState == EnemyState.Attacking)
+            {
+                rb.velocity = Vector2.zero;
+            }
+        } 
 
     }
 
@@ -67,7 +70,7 @@ public class EnemyMovement : MonoBehaviour
         rb.velocity = direction * Speed;
     }
 
-    private void ChangeState(EnemyState state)
+    public void ChangeState(EnemyState state)
     {
         //Exit the current animation
         switch (enemyState)
@@ -80,6 +83,9 @@ public class EnemyMovement : MonoBehaviour
                 break;
             case EnemyState.Attacking:
                 animator.SetBool("isAttacking", false);
+                break;
+            case EnemyState.Knockback:
+                animator.SetBool("isKnockedback", false);
                 break;
             default:
                 break;
@@ -99,6 +105,9 @@ public class EnemyMovement : MonoBehaviour
                 break;
             case EnemyState.Attacking:
                 animator.SetBool("isAttacking", true);
+                break;
+            case EnemyState.Knockback:
+                animator.SetBool("isKnockedback", true);
                 break;
             default:
                 break;
@@ -126,7 +135,7 @@ public class EnemyMovement : MonoBehaviour
                 attackCooldownTimer = attackCooldown;
                 ChangeState(EnemyState.Attacking);
             }
-            else if (Vector2.Distance(transform.position, player.position) > attackRange) 
+            else if (Vector2.Distance(transform.position, player.position) > attackRange && enemyState != EnemyState.Attacking) 
             {
                 ChangeState(EnemyState.Chasing);
             } 
@@ -138,9 +147,8 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-
     public enum EnemyState
     {
-        Idle, Chasing, Attacking
+        Idle, Chasing, Attacking, Knockback
     }
 }
