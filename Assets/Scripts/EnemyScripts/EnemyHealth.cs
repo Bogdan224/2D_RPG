@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public int expReward = 3;
+
+    public delegate void EnemyDefeated(int exp);
+    public static event EnemyDefeated OnEnemyDefeated;
+
     public int currentHealth;
     public int maxHealth;
 
@@ -27,6 +32,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void Die()
     {
+        OnEnemyDefeated(expReward);
         Destroy(gameObject);
     }
 }
