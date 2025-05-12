@@ -7,6 +7,13 @@ public class ToogleSkillTree : MonoBehaviour
     public CanvasGroup skillsCanvas;
     private bool skillTreeOpen = false;
 
+    private void Awake()
+    {
+        skillsCanvas.alpha = 0;
+        skillsCanvas.blocksRaycasts = false;
+        skillTreeOpen = false;
+    }
+
     private void Update()
     {
         if (Input.GetButtonDown("ToggleSkillTree"))

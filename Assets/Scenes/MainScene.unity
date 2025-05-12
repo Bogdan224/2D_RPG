@@ -2248,7 +2248,7 @@ Tilemap:
       - {fileID: -708342790, guid: 5bef03c5aa2fd6843a6386686ab4c10c, type: 3}
       - {fileID: 133265389, guid: 5bef03c5aa2fd6843a6386686ab4c10c, type: 3}
       - {fileID: 486820003, guid: 5bef03c5aa2fd6843a6386686ab4c10c, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -7, y: 0, z: 0}
@@ -2866,7 +2866,15 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 37dc538583885e348bd45170139d50fc, type: 2}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1210508142}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2991,7 +2999,7 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 339ca93c7694f594080d35439232ab06, type: 2}
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: isUnlocked
       value: 0
@@ -3185,6 +3193,10 @@ PrefabInstance:
       propertyPath: skillSO
       value: 
       objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3309,7 +3321,7 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: d292d4cbc3736b540b052e672236e838, type: 2}
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: isUnlocked
       value: 1
@@ -3317,7 +3329,7 @@ PrefabInstance:
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 780aec30ee15e014ca691ffd9b94d2e3, type: 3}
+      objectReference: {fileID: 21300000, guid: 5eb23e2fe26b42a43acd18ba154ae573, type: 3}
     - target: {fileID: 1129756066421945101, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Type
       value: 0
@@ -3332,7 +3344,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4759481212776589831, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_text
-      value: 0/5
+      value: 0/1
       objectReference: {fileID: 0}
     - target: {fileID: 4759481212776589831, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_fontSize
@@ -3702,7 +3714,7 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 596816c83d90cd84995c811e364ce1ca, type: 2}
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: isUnlocked
       value: 0
@@ -3718,7 +3730,7 @@ PrefabInstance:
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 780aec30ee15e014ca691ffd9b94d2e3, type: 3}
+      objectReference: {fileID: 21300000, guid: 5eb23e2fe26b42a43acd18ba154ae573, type: 3}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.b
       value: 0.5
@@ -44654,7 +44666,7 @@ Tilemap:
       - {fileID: 1295693160, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: -1336499037, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: -270767271, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 38, y: -14, z: 0}
@@ -44774,7 +44786,7 @@ Tilemap:
       - {fileID: 1295693160, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: -1336499037, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: -270767271, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 38, y: -10, z: 0}
@@ -44789,7 +44801,7 @@ Tilemap:
       - {fileID: 925823318, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: 767721304, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: -1793616039, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -33, y: -9, z: 0}
@@ -45149,7 +45161,7 @@ Tilemap:
       - {fileID: 925823318, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: 767721304, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: -1793616039, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -33, y: 3, z: 0}
@@ -45209,7 +45221,7 @@ Tilemap:
       - {fileID: 925823318, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: 767721304, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: -1793616039, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -33, y: 5, z: 0}
@@ -45674,7 +45686,7 @@ Tilemap:
       - {fileID: 1295693160, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: -1336499037, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: -270767271, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 38, y: 20, z: 0}
@@ -46094,7 +46106,7 @@ Tilemap:
       - {fileID: -2079236485, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: -1500920638, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
       - {fileID: 2077010294, guid: bf228d872c1ee214ea877e3a7f478f76, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -15, y: 26, z: 0}
@@ -47692,7 +47704,11 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 37dc538583885e348bd45170139d50fc, type: 2}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -47817,7 +47833,15 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 37dc538583885e348bd45170139d50fc, type: 2}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 131522514}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -48076,6 +48100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statsUI: {fileID: 1468259617}
+  healthText: {fileID: 1287237305}
   damage: 2
   WeaponRange: 0.8
   KnockbackForce: 10
@@ -48114,7 +48139,15 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 37dc538583885e348bd45170139d50fc, type: 2}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 75182387}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -48438,15 +48471,23 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 7ed86329349eaf24e8877dc703e565bb, type: 2}
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: isUnlocked
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 651319568}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 780aec30ee15e014ca691ffd9b94d2e3, type: 3}
+      objectReference: {fileID: 21300000, guid: 06171e3208317f54fa8a7d1a9037f7b9, type: 3}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.b
       value: 0.5
@@ -48655,6 +48696,7 @@ GameObject:
   - component: {fileID: 1075431861}
   - component: {fileID: 1075431860}
   - component: {fileID: 1075431864}
+  - component: {fileID: 1075431865}
   m_Layer: 0
   m_Name: SkillsCanvas
   m_TagString: Untagged
@@ -48692,7 +48734,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 1
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &1075431861
 MonoBehaviour:
@@ -48796,6 +48838,19 @@ MonoBehaviour:
   - {fileID: 77300585}
   pointsText: {fileID: 1991254467}
   availablePoints: 5
+--- !u!114 &1075431865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075431858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d44e65d1d356c904cac36cf42bc9fe23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillsCanvas: {fileID: 1075431860}
 --- !u!1 &1090334416
 GameObject:
   m_ObjectHideFlags: 0
@@ -49182,7 +49237,15 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 4cd930ff1211d6446b3205fc2bb052c5, type: 2}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 916392413}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -49668,30 +49731,30 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: c6367debc0c103f4aa29bcd813c78d07, type: 2}
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: isUnlocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 780aec30ee15e014ca691ffd9b94d2e3, type: 3}
+      objectReference: {fileID: 21300000, guid: 6020f07137553174795a4ccee0a4f7c2, type: 3}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.b
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.g
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.r
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 762274976793337918, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1129756066421945101, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Type
@@ -49707,7 +49770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4759481212776589831, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_text
-      value: Locked
+      value: 0/1
       objectReference: {fileID: 0}
     - target: {fileID: 5372977487158956690, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Pivot.x
@@ -50291,7 +50354,15 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: fd590c843e51d42459e616ccdf6bbcf1, type: 2}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 870998444}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -50643,11 +50714,19 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 75544ed6c4b0d774585d957e816f9b1b, type: 2}
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: isUnlocked
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1925692462}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -50871,7 +50950,15 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 2a725565b9b5bec4a8afec7a629af3be, type: 2}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 152939312}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.b
       value: 0.5
@@ -51231,7 +51318,15 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 2a725565b9b5bec4a8afec7a629af3be, type: 2}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1700336418}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.b
       value: 0.5
@@ -51352,11 +51447,19 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: a7cd35df0769455499cb8979519773ce, type: 2}
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: isUnlocked
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1858436106}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -51489,7 +51592,15 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 580c5e2e04651204889fa009f9888d1c, type: 2}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1577523704}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -53506,7 +53617,15 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 2a725565b9b5bec4a8afec7a629af3be, type: 2}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 273591165}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.b
       value: 0.5
@@ -54260,11 +54379,19 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 1fb83b7160354b14a9eae2f533c431c9, type: 2}
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: isUnlocked
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 828546073}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -54397,30 +54524,30 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 97b2c3962b4982c4e84725cda6dfe24e, type: 2}
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: isUnlocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 780aec30ee15e014ca691ffd9b94d2e3, type: 3}
+      objectReference: {fileID: 21300000, guid: 06171e3208317f54fa8a7d1a9037f7b9, type: 3}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.b
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.g
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.r
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 762274976793337918, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1129756066421945101, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Type
@@ -54436,7 +54563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4759481212776589831, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_text
-      value: Locked
+      value: 0/1
       objectReference: {fileID: 0}
     - target: {fileID: 5372977487158956690, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Pivot.x
@@ -54534,6 +54661,7 @@ GameObject:
   - component: {fileID: 1803710863}
   - component: {fileID: 1803710865}
   - component: {fileID: 1803710864}
+  - component: {fileID: 1803710866}
   m_Layer: 0
   m_Name: SkillPanel
   m_TagString: Untagged
@@ -54602,6 +54730,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803710862}
   m_CullTransparentMesh: 1
+--- !u!114 &1803710866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803710862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3103f2849004dfe42881c312a27f30ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1806908572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54857,7 +54997,7 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 0ba44a5a0bef38e49b5de40c901e76a5, type: 2}
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: isUnlocked
       value: 0
@@ -55002,15 +55142,23 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: bebcdb832937eb340a60767e7ffe9c4f, type: 2}
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: isUnlocked
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 275270444}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 780aec30ee15e014ca691ffd9b94d2e3, type: 3}
+      objectReference: {fileID: 21300000, guid: 6020f07137553174795a4ccee0a4f7c2, type: 3}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.b
       value: 0.5
@@ -55771,11 +55919,19 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 7155289b6b8d58544b86ab307816aee5, type: 2}
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: isUnlocked
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: prerequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 504267787}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -56005,7 +56161,11 @@ PrefabInstance:
     - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 656dc80c4e9a4d842a0a4c9391824144, type: 2}
+      objectReference: {fileID: 11400000, guid: 2a725565b9b5bec4a8afec7a629af3be, type: 2}
+    - target: {fileID: 543752937881266579, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
+      propertyPath: isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 652453122801791370, guid: d1b8fbbab21a53e4ab0726597f408fc3, type: 3}
       propertyPath: m_Color.b
       value: 0.5
