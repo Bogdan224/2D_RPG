@@ -7,13 +7,19 @@ public class Player_Combat : MonoBehaviour
     public Transform attackPoint;
     public LayerMask enemyLayer;
 
-    public Animator anim;
+    private Animator anim;
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Attack();
+        }
+    }
 
     public void Attack()
     {
         anim.SetBool("isAttacking", true);
-
-       
     }
 
     public void DealDamage()
@@ -22,8 +28,11 @@ public class Player_Combat : MonoBehaviour
         
         if (enemies.Length > 0)
         {
-            enemies[0].GetComponent<EnemyHealth>().ChangeHealth(-StatsManager.Instance.Damage);
-            enemies[0].GetComponent<EnemyKnockback>().Knockback(transform, StatsManager.Instance.KnockbackForce, StatsManager.Instance.StunTime);
+            foreach (var enemy in enemies)
+            {
+                enemy.GetComponent<EnemyHealth>().ChangeHealth(-StatsManager.Instance.Damage);
+                enemy.GetComponent<EnemyKnockback>().Knockback(transform, StatsManager.Instance.KnockbackForce, StatsManager.Instance.StunTime);
+            }
         }
     }
 

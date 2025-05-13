@@ -11,20 +11,6 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isKnockedBack;
 
-    private Player_Combat player_Combat;
-
-    private void Start()
-    {
-        player_Combat = GetComponent<Player_Combat>();
-    }
-
-    private void Update()
-    {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            player_Combat.Attack();
-        }
-    }
     // Update is called once per frame
     void FixedUpdate()
     {
