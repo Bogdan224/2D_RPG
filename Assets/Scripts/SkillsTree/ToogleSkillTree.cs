@@ -7,7 +7,7 @@ public class ToogleSkillTree : MonoBehaviour
     public CanvasGroup skillsCanvas;
     private bool skillTreeOpen = false;
 
-    private void Awake()
+    private void Start()
     {
         skillsCanvas.alpha = 0;
         skillsCanvas.blocksRaycasts = false;
