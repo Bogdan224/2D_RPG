@@ -45,10 +45,10 @@ public class Player_Bow : MonoBehaviour
             if (Input.GetButtonDown("Fire1"))
             {
                 Attack();
-
+                isReadyToShoot = false;
                 isPrepareToShoot = true;
             }
-            if (isPrepareToShoot )
+            if (isPrepareToShoot)
             {
                 if (horizontal > 0 && transform.localScale.x < 0 || horizontal < 0 && transform.localScale.x > 0)
                 {
@@ -58,8 +58,7 @@ public class Player_Bow : MonoBehaviour
                 {
                     isReadyToShoot = true;
                 }
-            }
-            
+            } 
         }
     }
 
@@ -104,7 +103,6 @@ public class Player_Bow : MonoBehaviour
                 
             });
             anim.speed = 1;
-            Debug.Log(isReadyToShoot);
 
             Arrow arrow = Instantiate(arrowPrefab, launchPoint.position, Quaternion.identity).GetComponent<Arrow>();
             arrow.direction = aimDirection;

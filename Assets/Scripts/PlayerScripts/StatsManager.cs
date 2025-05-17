@@ -62,4 +62,12 @@ public class StatsManager : MonoBehaviour
         healthText.text = "HP: " + CurrentHealth + "/" + MaxHealth;
     }
 
+    public void UpdateCurrentHealth(int amount)
+    {
+        CurrentHealth += amount;
+        if(CurrentHealth > MaxHealth)
+            CurrentHealth = MaxHealth;
+        healthText.text = "HP: " + CurrentHealth + "/" + MaxHealth;
+    }
+
 }
